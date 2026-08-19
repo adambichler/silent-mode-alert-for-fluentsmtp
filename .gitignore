@@ -3,6 +3,9 @@
 # Generated release archives.
 *.zip
 
+# Local-only release instructions.
+RELEASE-PUBLISHING.md
+
 # Local editor and operating-system files.
 .idea/
 .vscode/
