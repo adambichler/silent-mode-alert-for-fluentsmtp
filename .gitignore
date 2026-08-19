@@ -1,0 +1,17 @@
+.DS_Store
+
+# Generated release archives.
+*.zip
+
+# Local editor and operating-system files.
+.idea/
+.vscode/
+
+# Temporary files.
+*.tmp
+*.temp
+*.swp
+
+# Local dependency and test output.
+vendor/
+coverage/

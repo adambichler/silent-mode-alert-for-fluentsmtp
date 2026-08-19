@@ -1,0 +1,25 @@
+name: PHP lint
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+
+      - name: Lint PHP files
+        run: |
+          php -l silent-mode-alert-for-fluentsmtp/silent-mode-alert-for-fluentsmtp.php
+          php -l silent-mode-alert-for-fluentsmtp/includes/class-silent-mode-alert-for-fluentsmtp.php
